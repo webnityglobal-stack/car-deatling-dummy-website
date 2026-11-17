@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment | APEX Detailing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">APEX<span>.</span></a>
+
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="booking.html" class="nav-btn">Book Now
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- BOOKING HERO -->
+
+<section class="booking-hero">
+
+    <div class="booking-hero-content">
+
+        <span class="tag">APEX DETAILING EXPERIENCE</span>
+
+        <h1>
+            BOOK YOUR<br>
+            <span>APPOINTMENT.</span>
+        </h1>
+
+        <p>
+            Your car deserves exceptional care.
+            Schedule your premium detailing experience with APEX.
+        </p>
+
+        <div class="booking-breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Booking</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BOOKING MAIN SECTION -->
+
+<section class="booking-page-section">
+
+    <div class="booking-page-container">
+
+        <!-- LEFT INFORMATION -->
+
+        <div class="booking-info">
+
+            <span class="tag">LET'S GET STARTED</span>
+
+            <h2>
+                GIVE YOUR CAR<br>
+                <span>THE APEX TREATMENT.</span>
+            </h2>
+
+            <p>
+                Fill in your details and choose the service
+                you need. Our team will get in touch to confirm
+                your appointment.
+            </p>
+
+            <div class="booking-info-list">
+
+                <div class="booking-info-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <div>
+                        <h3>Easy Booking</h3>
+                        <p>Request your preferred appointment date.</p>
+                    </div>
+                </div>
+
+                <div class="booking-info-item">
+                    <i class="fa-solid fa-car-side"></i>
+
+                    <div>
+                        <h3>Premium Car Care</h3>
+                        <p>Professional detailing for your vehicle.</p>
+                    </div>
+                </div>
+
+                <div class="booking-info-item">
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    <div>
+                        <h3>Expert Team</h3>
+                        <p>Attention to every little detail.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="booking-help">
+                <i class="fa-solid fa-headset"></i>
+
+                <div>
+                    <small>NEED HELP?</small>
+                    <h3>Contact Our Team</h3>
+                    <p>We're here to assist you with your booking.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- BOOKING FORM -->
+
+        <div class="booking-form-wrapper">
+
+            <div class="booking-form-heading">
+                <span class="tag">APPOINTMENT REQUEST</span>
+                <h2>Book Your Service</h2>
+                <p>Enter your information below.</p>
+            </div>
+
+
+            <form id="appointmentForm">
+
+                <h3 class="form-section-title">
+                    <span>01</span> Personal Information
+                </h3>
+
+                <div class="booking-input-grid">
+
+                    <div class="booking-field">
+                        <label for="fullName">Full Name *</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="booking-field">
+                        <label for="phone">Phone Number *</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                    <div class="booking-field full-width">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
+                    </div>
+
+                </div>
+
+
+                <h3 class="form-section-title">
+                    <span>02</span> Vehicle Information
+                </h3>
+
+                <div class="booking-input-grid">
+
+                    <div class="booking-field">
+                        <label for="carBrand">Car Brand *</label>
+
+                        <select id="carBrand" required>
+                            <option value="">Select Brand</option>
+                            <option>Maruti Suzuki</option>
+                            <option>Hyundai</option>
+                            <option>Tata</option>
+                            <option>Mahindra</option>
+                            <option>Kia</option>
+                            <option>Toyota</option>
+                            <option>Honda</option>
+                            <option>Volkswagen</option>
+                            <option>Skoda</option>
+                            <option>BMW</option>
+                            <option>Mercedes-Benz</option>
+                            <option>Audi</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-field">
+                        <label for="carModel">Car Model *</label>
+
+                        <input
+                            type="text"
+                            id="carModel"
+                            placeholder="e.g. BMW 3 Series"
+                            required
+                        >
+                    </div>
+
+                    <div class="booking-field full-width">
+                        <label for="carYear">Manufacturing Year</label>
+
+                        <input
+                            type="number"
+                            id="carYear"
+                            placeholder="e.g. 2024"
+                            min="1990"
+                            max="2026"
+                        >
+                    </div>
+
+                </div>
+
+
+                <h3 class="form-section-title">
+                    <span>03</span> Select Your Service
+                </h3>
+
+                <div class="booking-input-grid">
+
+                    <div class="booking-field full-width">
+                        <label for="service">Choose Service *</label>
+
+                        <select id="service" required>
+                            <option value="">Select a Service</option>
+                            <option>Ceramic Coating</option>
+                            <option>Paint Protection Film</option>
+                            <option>Paint Correction</option>
+                            <option>Interior Detailing</option>
+                            <option>Premium Car Wash</option>
+                            <option>Headlight Restoration</option>
+                            <option>Complete Car Detailing</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-field">
+                        <label for="date">Appointment Date *</label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+                    </div>
+
+                    <div class="booking-field">
+                        <label for="time">Preferred Time *</label>
+
+                        <select id="time" required>
+                            <option value="">Select Time</option>
+                            <option>09:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>01:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>03:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>05:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-field full-width">
+                        <label for="message">Additional Requirements</label>
+
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder="Tell us about your requirements..."
+                        ></textarea>
+                    </div>
+
+                </div>
+
+
+                <div class="booking-terms">
+
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to be contacted by APEX Detailing
+                        regarding my appointment request.
+                    </label>
+
+                </div>
+
+
+                <button type="submit" class="booking-submit-btn">
+
+                    Confirm Booking Request
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+                <p class="booking-note">
+                    <i class="fa-solid fa-lock"></i>
+                    Your information will be used to process your booking request.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+    <div class="footer-main">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo">APEX<span>.</span></a>
+
+            <p>
+                Premium care. Perfect finish. Every time.
+                Experience professional automotive detailing with APEX.
+            </p>
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Services</h3>
+            <a href="services.html">Ceramic Coating</a>
+            <a href="services.html">Paint Protection Film</a>
+            <a href="services.html">Paint Correction</a>
+            <a href="services.html">Interior Detailing</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Contact</h3>
+            <p>Add Your Phone</p>
+            <p>Add Your Email</p>
+            <p>Add Your Address</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 APEX Detailing. All Rights Reserved.</p>
+        <p>Designed with ♥ for Car Lovers.</p>
+    </div>
+
+</footer>
+
+
+<script src="booking.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | APEX Detailing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <a href="index.html" class="logo">APEX<span>.</span></a>
+
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <a href="index.html#booking" class="nav-btn">
+        Book Now <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- GALLERY HERO -->
+<section class="gallery-hero">
+
+    <div>
+        <span class="tag">OUR WORK. OUR PASSION.</span>
+
+        <h1>EVERY DETAIL.<br>
+            <span>PERFECTED.</span>
+        </h1>
+
+        <p>
+            Explore our detailing transformations and discover
+            what premium car care really looks like.
+        </p>
+
+        <a href="#gallery-work" class="primary-btn">
+            Explore Gallery
+            <i class="fa-solid fa-arrow-down"></i>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- BEFORE AFTER SECTION -->
+<section class="before-after section">
+
+    <div class="section-title">
+        <span class="tag">THE TRANSFORMATION</span>
+        <h2>BEFORE <span>& AFTER</span></h2>
+        <p>See the difference professional detailing can make.</p>
+    </div>
+
+    <div class="comparison-container" id="comparison">
+
+        <img
+            class="comparison-after"
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200"
+            alt="Car after detailing"
+        >
+
+        <div class="comparison-before" id="beforeImage">
+            <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200"
+                alt="Car before detailing"
+            >
+        </div>
+
+        <div class="comparison-line" id="comparisonLine">
+            <span><i class="fa-solid fa-arrows-left-right"></i></span>
+        </div>
+
+        <span class="comparison-label before-label">BEFORE</span>
+        <span class="comparison-label after-label">AFTER</span>
+
+        <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            id="comparisonSlider"
+            aria-label="Compare before and after"
+        >
+
+    </div>
+
+    <p class="comparison-hint">
+        <i class="fa-solid fa-hand-pointer"></i>
+        Drag the slider to compare
+    </p>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery-work section" id="gallery-work">
+
+    <div class="section-title">
+        <span class="tag">OUR PORTFOLIO</span>
+        <h2>THE APEX <span>COLLECTION</span></h2>
+        <p>A closer look at automotive perfection.</p>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="gallery-filters">
+
+        <button class="gallery-filter active" data-filter="all">All Work</button>
+
+        <button class="gallery-filter" data-filter="exterior">Exterior</button>
+
+        <button class="gallery-filter" data-filter="interior">Interior</button>
+
+        <button class="gallery-filter" data-filter="protection">Protection</button>
+
+    </div>
+
+
+    <!-- IMAGES -->
+    <div class="portfolio-grid">
+
+        <div class="portfolio-item" data-category="exterior">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900" alt="Luxury exterior">
+            <div class="portfolio-overlay">
+                <span>EXTERIOR DETAILING</span>
+                <h3>Premium Finish</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="protection">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900" alt="Sports car protection">
+            <div class="portfolio-overlay">
+                <span>PAINT PROTECTION</span>
+                <h3>Gloss & Protection</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="interior">
+            <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?w=900" alt="Luxury car interior">
+            <div class="portfolio-overlay">
+                <span>INTERIOR DETAILING</span>
+                <h3>Interior Luxury</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="exterior">
+            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=900" alt="Car exterior">
+            <div class="portfolio-overlay">
+                <span>EXTERIOR CARE</span>
+                <h3>Perfect Reflection</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="interior">
+            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=900" alt="Car interior">
+            <div class="portfolio-overlay">
+                <span>INTERIOR CARE</span>
+                <h3>Premium Cabin</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-category="protection">
+            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=900" alt="Luxury vehicle">
+            <div class="portfolio-overlay">
+                <span>VEHICLE PROTECTION</span>
+                <h3>Ultimate Care</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="gallery-cta">
+
+    <span class="tag">YOUR CAR COULD BE NEXT</span>
+
+    <h2>READY FOR YOUR<br><span>OWN TRANSFORMATION?</span></h2>
+
+    <p>Let's make your vehicle stand out.</p>
+
+    <a href="index.html#booking" class="primary-btn">
+        Book Your Detail
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact">
+
+    <a href="index.html" class="logo">APEX<span>.</span></a>
+
+    <p>Premium care. Perfect finish. Every time.</p>
+
+    <p class="copyright">
+        © 2026 APEX Detailing. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="gallery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | APEX Detailing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- SAME NAVBAR -->
+<header class="navbar">
+
+    <a href="index.html" class="logo">APEX<span>.</span></a>
+
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <a href="#contact-form" class="nav-btn">
+        Book Now <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+
+    <div class="contact-hero-content">
+
+        <span class="tag">WE'RE HERE TO HELP</span>
+
+        <h1>LET'S TALK<br>
+            <span>ABOUT YOUR CAR.</span>
+        </h1>
+
+        <p>
+            Have questions about our detailing services?
+            Get in touch with our team and let's give your car
+            the care it deserves.
+        </p>
+
+        <a href="#contact-form" class="primary-btn">
+            Contact Our Team
+            <i class="fa-solid fa-arrow-down"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT INFORMATION -->
+<section class="contact-info-section section">
+
+    <div class="section-title">
+        <span class="tag">GET IN TOUCH</span>
+        <h2>WE'D LOVE TO <span>HEAR FROM YOU</span></h2>
+        <p>Reach out to us for bookings, questions or service enquiries.</p>
+    </div>
+
+    <div class="contact-info-grid">
+
+        <div class="contact-info-card">
+            <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Speak directly with our team.</p>
+            <a href="tel:+910000000000">+91 00000 00000</a>
+        </div>
+
+        <div class="contact-info-card">
+            <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>Send us your questions anytime.</p>
+            <a href="mailto:info@example.com">info@example.com</a>
+        </div>
+
+        <div class="contact-info-card">
+            <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>Come visit our detailing studio.</p>
+            <span>Update your studio address here</span>
+        </div>
+
+        <div class="contact-info-card">
+            <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Working Hours</h3>
+            <p>We're available for your enquiries.</p>
+            <span>Monday – Saturday</span>
+            <small>9:00 AM – 7:00 PM</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT FORM -->
+<section class="contact-form-section section" id="contact-form">
+
+    <div class="contact-form-layout">
+
+        <div class="contact-form-text">
+
+            <span class="tag">BOOK YOUR DETAILING</span>
+
+            <h2>LET'S MAKE YOUR<br>
+                <span>CAR SHINE.</span>
+            </h2>
+
+            <p>
+                Tell us a little about your vehicle and the service
+                you're interested in. Our team will get in touch
+                with you.
+            </p>
+
+            <div class="contact-points">
+                <p><i class="fa-solid fa-check"></i> Personalised service recommendations</p>
+                <p><i class="fa-solid fa-check"></i> Professional car care</p>
+                <p><i class="fa-solid fa-check"></i> Easy appointment enquiries</p>
+            </div>
+
+            <div class="contact-social">
+                <span>FOLLOW APEX</span>
+
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <h3>Send Us An Enquiry</h3>
+
+            <div class="contact-input-row">
+
+                <div class="contact-field">
+                    <label for="customerName">Your Name</label>
+                    <input type="text" id="customerName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="contact-field">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" placeholder="Enter phone number" pattern="[0-9+\s()-]{10,16}" required>
+                </div>
+
+            </div>
+
+            <div class="contact-field">
+                <label for="customerEmail">Email Address</label>
+                <input type="email" id="customerEmail" placeholder="Enter your email" required>
+            </div>
+
+            <div class="contact-field">
+                <label for="carModel">Car Model</label>
+                <input type="text" id="carModel" placeholder="e.g. BMW, Mercedes, Audi" required>
+            </div>
+
+            <div class="contact-field">
+                <label for="serviceType">Select Service</label>
+
+                <select id="serviceType" required>
+                    <option value="">Choose a service</option>
+                    <option>Ceramic Coating</option>
+                    <option>Paint Protection Film</option>
+                    <option>Paint Correction</option>
+                    <option>Interior Detailing</option>
+                    <option>Premium Car Wash</option>
+                    <option>Headlight Restoration</option>
+                </select>
+            </div>
+
+            <div class="contact-field">
+                <label for="customerMessage">Your Message</label>
+                <textarea id="customerMessage" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Send Enquiry <i class="fa-brands fa-whatsapp"></i>
+            </button>
+
+            <small class="form-note">
+                Your enquiry will open in WhatsApp for sending.
+            </small>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- MAP / LOCATION -->
+<section class="contact-location section">
+
+    <div class="section-title">
+        <span class="tag">FIND OUR STUDIO</span>
+        <h2>VISIT <span>APEX DETAILING</span></h2>
+        <p>Replace this section with your actual studio location.</p>
+    </div>
+
+    <div class="map-placeholder">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <h3>Our Studio Location</h3>
+        <p>Add your Google Maps embed here.</p>
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="contact-cta">
+
+    <span class="tag">YOUR CAR DESERVES THE BEST</span>
+
+    <h2>READY TO EXPERIENCE<br>
+        <span>THE APEX DIFFERENCE?</span>
+    </h2>
+
+    <p>Let's make every drive feel special.</p>
+
+    <a href="#contact-form" class="primary-btn">
+        Get In Touch <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <a href="index.html" class="logo">APEX<span>.</span></a>
+
+    <p>Premium care. Perfect finish. Every time.</p>
+
+    <p class="copyright">
+        © 2026 APEX Detailing. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="contact.js"></script>
+
+</body>
+</html>
